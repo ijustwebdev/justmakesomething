@@ -54,12 +54,15 @@
     margin-top: 10%;
     margin-right: 15%;
  }
+ #videos{
+    display: flex;
+    flex-direction: column;
+ }
  .vidwrapper{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 100%;
  }
  .border{
     border: solid 7px white;
@@ -166,11 +169,13 @@
  .soctext{
     text-align: center;
     font-family: 'Roboto', sans-serif;
+    font-size: 4vw;
  }
  .footersection{
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: center;
     width: 45%;
     max-height: 60%;
     border-radius: 5px;
@@ -187,11 +192,108 @@
  }
 }
 @media (min-width: 1024px){
-.vidwrapper{
-    display: flex;
-    flex-direction: column;
- }
- .someseperator{
-    display: none;
- }
+    #name{
+        font-size: 2vw;
+        margin-left: 2%;
+        margin-top: 1%;
+    }
+    #fpv{
+        font-size: 1vw;
+        margin-top: -1%;
+        margin-left: 2%;
+    }
+    #idk{
+        justify-content: space-between;
+    }
+    #youtubelink>img{
+        max-width: 5vw;
+        margin-right: 0;
+        margin-left: -25%;
+        margin-top: 15%;
+    }
+    #headerbar{
+        height: 5vw;
+    }
+    #videos{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .paragraph{
+        font-size: 1.5vw;
+    }
+    .someseperator{
+        display: none;
+    }
+    .vidwrapper{
+        width: 50%;
+        justify-content: flex-start;
+     }
+    .border>iframe{
+        width: 35vw;
+        
+    }
+    #checkbg{
+        align-self: flex-start;
+        font-size: 2vw;
+        max-width: 20%;
+        margin-left: 5%;
+        margin-top: 0%;
+     }
+     #gearshowoff{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+     }
+     .gear>img{
+        width: 12vw;
+        align-self: center;
+     }
+     .gear{
+        width: 30%;
+        justify-content: flex-start;
+        margin-bottom: 1%;
+     }
+     .geartitle{
+        font-size: 3vw;
+     }
+     .gearname{
+        font-size: 2vw;
+     }
+     .geartext{
+        font-size: 1vw;
+     }
+     #thanks{
+      margin: 2% 0%;
+     }
+     #footer{
+      height: fit-content;   
+      flex-direction: row; 
+      justify-content: center;
+   }
+   .footersection{
+      width: 20%;
+      justify-content: center;
+      max-height: 10%;
+      margin: 1% 1%;
+   }
+   .socimg{
+      width: 10%;
+      
+   }
+   .soctext{
+      font-size: 2vw;
+   }
+   #flexrev{
+      flex-direction: row-reverse;
+      
+   }
+     
+}
+@media (min-width: 1920px){
+   #wrapper{
+      max-width: 1920px;
+      margin: 0 auto;
+   }
 }
